@@ -1,1 +1,29 @@
+/*SQL DataWarehouse Project
+-------------------------------------------------------
+-------------------------------------------------------
+Create Databases and Schemas
+-------------------------------------------------------
+-------------------------------------------------------
+Script Purpose:
+This creates new Database named 'Datawarehouse' and Schemas namely bronze,silver and gold layers
+*/
 
+
+USE master;
+GO 
+--Create DataWarehouse Database
+  CREATE DATABASE DataWarehouse;
+
+--Use DataWarehouse Database
+  USE DataWarehouse;
+
+--Create bronze schema(Raw data)
+  CREATE SCHEMA bronze;
+  GO
+
+--Create silver schema(Cleaned & Transformed data)
+  CREATE SCHEMA silver;
+  GO
+--Create gold schema(Business-Ready data)
+  CREATE SCHEMA gold;
+  GO
