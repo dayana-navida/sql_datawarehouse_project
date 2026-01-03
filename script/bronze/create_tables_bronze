@@ -85,7 +85,7 @@ CREATE TABLE bronze.sales_details(
     sls_order_dt NVARCHAR(50),
     sls_ship_dt NVARCHAR(50),
     sls_due_dt NVARCHAR(50),
-    sls_sales NVARCHAR(50),
-    sls_quantity NVARCHAR(50),
-    sls_price NVARCHAR(50)
+    sls_sales DECIMAL,
+    sls_quantity INT,
+    sls_price DECIMAL
 );
